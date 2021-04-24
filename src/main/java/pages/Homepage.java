@@ -89,15 +89,15 @@ public class Homepage extends WebDriverServiceImpl{
 		WebDriverWait wait = new WebDriverWait(driver,35);
 		WebElement actual = locateElement("class","slds-icon-waffle");
 	 	wait.until(ExpectedConditions.elementToBeClickable(actual));
-		click(locateElement("xpath","//button[text()='View All']"));
+		click(actual);
 		System.out.println("Clicked ViewAll");
-			return this;
+		return this;
 	}
 	
-	public TaskPage clickSales() throws IOException {
-	click(locateElement("xpath","//p[contains(text(),'Manage your sales')]"));
-	System.out.println("Clicked NewTask");
-	return new TaskPage();
+	public SalesHomePage clickSales() throws IOException {
+		click(locateElement("xpath","//p[contains(text(),'Manage your sales')]"));
+		System.out.println("Clicked Sales");
+		return new SalesHomePage();
 	}
 
 	public NewLegalEntitiesWithoutReqFields ClickLegalEntities() {
@@ -105,15 +105,15 @@ public class Homepage extends WebDriverServiceImpl{
 		 WebElement actual = locateElement("xpath", "//a[@data-label='Legal Entities']");
 		 wait.until(ExpectedConditions.elementToBeClickable(actual));
 		 clickscript(actual);
-	System.out.println("Clicked LegalEntities");
+		 System.out.println("Clicked LegalEntities");
 	//	driver.executeScript("arguments[0].click()", driver.findElementByXPath("//a[@data-label='Legal Entities']"));
-	return new NewLegalEntitiesWithoutReqFields();
+		 return new NewLegalEntitiesWithoutReqFields();
 	}
 
 	public NewServiceAppointments ClickServiceAppointments() {
-	clickscript(locateElement("xpath", "//a[@data-label='Service Appointments']"));
-	System.out.println("Clicked ServiceAppointments");
-	return new NewServiceAppointments();
+		clickscript(locateElement("xpath", "//a[@data-label='Service Appointments']"));
+		System.out.println("Clicked ServiceAppointments");
+		return new NewServiceAppointments();
 	//driver.executeScript("arguments[0].click()", driver.findElementByXPath("//a[@data-label='Service Appointments']"));
 	}
 	

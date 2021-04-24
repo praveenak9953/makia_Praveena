@@ -9,12 +9,6 @@ import lib.selenium.WebDriverServiceImpl;
 public class TaskPage extends WebDriverServiceImpl{
 	
 	
-	public TaskPage clickTaskTab() throws IOException {
-		clickscript(locateElement("xpath", "//a[@title='Tasks']/span"));
-		System.out.println("Clicked Task Tab");
-		return this;
-	}
-
 	public TaskPage clickRecentlyViewed() throws IOException {
 		click(locateElement("xpath", "//a[@title='Select List View']"));
 		click(locateElement("xpath", "//ul//span[text()='Recently Viewed']"));

@@ -8,6 +8,10 @@
       <class name="testcases.NewLegalEntitiesWithoutReqFields_TC"/>
       <class name="testcases.NewTaskWithoutReqFields_TC"/>
       <class name="testcases.CreateNewTask_TC"/>
+<!--       <class name="testcases.NewWorkTypeGroup_TC"/>
+      <class name="testcases.EditWorkTypeGroup_TC"/>
+      <class name="testcases.DeleteWorkTypeGroup_TC"/>
+      <class name="testcases.NewServiceAppointments_TC"/> -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
