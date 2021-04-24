@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <test thread-count="5" name="Test(failed)" parallel="classes">
+    <classes>
+      <class name="testcases.EditTask_TC">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="setFile"/>
+          <include name="beforeMethod"/>
+          <include name="afterSuite"/>
+          <include name="afterMethod"/>
+          <include name="runEditTask"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- testcases.EditTask_TC -->
+      <class name="testcases.CreateNewTask_TC">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterSuite"/>
+          <include name="setFile"/>
+          <include name="runCreateNewTaske"/>
+          <include name="afterMethod"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- testcases.CreateNewTask_TC -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
